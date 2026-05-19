@@ -1,6 +1,6 @@
 # 作业说明与项目概述
 ## 一、项目基础信息
-- 仓库地址：https://github.com/andyasus/2024_wurenji.git
+- 仓库地址：https://github.com/andyasus/26_wuren_Zhenhua-Ye
 - 分支说明：`master` 分支存放旧作业及前期相关内容，`main` 分支存放本次CMake作业，均已完成推送与部署。
 
 ## 二、作业相关（含分支详情）
