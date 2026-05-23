@@ -1,12 +1,11 @@
 # 作业说明与项目概述
 ## 一、项目基础信息
 - 仓库地址：https://github.com/andyasus/26_wuren_Zhenhua-Ye
-- 分支说明：`master` 分支存放作业2-1，`main` 分支存放CMake作业，均已完成推送与部署。
+- 分支说明：`main` 分支存放Homework1，Homework1中包含CMake_HW和linux_practice_HW两份作业，均已完成推送与部署。
 
 ## 二、作业相关（含分支详情）
 ### （一）分支对应作业
-1.  `master` 分支：存放作业2-1，通过HTTPS+令牌方式推送，已完成部署，可正常访问。
-2.  `main` 分支：存放CMake作业，包含相关源码及配置，已通过SSH方式完成推送，可正常运行。
+- `main` 分支存放Homework1，Homework1中包含CMake_HW和linux_practice_HW两份作业
 
 ## 三、学习与安装相关
 ### （一）系统配置
