@@ -63,8 +63,8 @@
 ## 作业3：SVM鸢尾花分类
 
 ### 参考资料
-- sklearn SVM文档：https://scikit-learn.org/stable/modules/svm.html
-- 鸢尾花数据集介绍：https://scikit-learn.org/stable/datasets/toy_dataset.html#iris-dataset
+- sklearn SVM文档：https://scikit-learn.cn/stable/modules/svm.html
+- 鸢尾花数据集介绍：https://scikit-learn.cn/stable/datasets/toy_dataset.html#iris-dataset
 
 ### 算法原理
 SVM（支持向量机）的核心思想是在不同类别的样本之间找到一个**最优超平面**，使得两类样本到这个平面的距离最大。对于非线性可分的数据，可以使用核函数将数据映射到高维空间，使其在高维空间中线性可分。本次作业使用径向基核函数（RBF）对鸢尾花数据集进行三分类。
