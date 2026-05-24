@@ -37,10 +37,6 @@
 
 ## 作业2：手搓多元线性回归+L2正则化
 
-### 参考资料
-- 线性回归与梯度下降：https://www.bilibili.com/video/BV18x411C7ix/
-- 正则化原理：https://scikit-learn.org/stable/modules/linear_model.html#ridge-regression
-
 ### 算法原理
 #### 普通多元线性回归
 我们要拟合一个线性方程：`y = w₁x₁ + w₂x₂ + ... + wₙxₙ + b`，通过最小化均方误差损失函数来找到最优的权重w和偏置b。本次作业使用**梯度下降法**来求解，通过不断沿着损失函数的负梯度方向更新参数，直到收敛。
