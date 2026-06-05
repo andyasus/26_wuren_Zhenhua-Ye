@@ -1,0 +1,9 @@
+# 乌龟8字运动参数（两圆法：左转一圈 + 右转一圈 = 8字）
+# 8字尺寸：宽 4R × 高 2R，屏幕 11×11，R 建议 0.5~2.75
+turtle_figure8:
+  ros__parameters:
+    linear_speed: 1.5      # 线速度 (m/s)
+    radius: 2.0             # 圆半径 (m)，0.5~2.75 安全
+    control_rate: 50.0      # 控制频率 (Hz)
+    turtle_name: "turtle1"  # 乌龟名字
+    reset_turtle: True      # 启动时是否重置到屏幕中心

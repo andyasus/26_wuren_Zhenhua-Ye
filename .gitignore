@@ -1,0 +1,24 @@
+# VS Code workspace database files (very large, auto-generated)
+.vscode/browse.vc.db*
+.vscode/User/
+
+# ROS2 build artifacts
+**/build/
+**/install/
+**/log/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Video files (large)
+*.mp4
+*.avi
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Other temp
+home/
