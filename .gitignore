@@ -1,6 +1,6 @@
-# VS Code workspace database files (very large, auto-generated)
-.vscode/browse.vc.db*
-.vscode/User/
+# VS Code (all workspace files)
+.vscode/
+**/.vscode/
 
 # ROS2 build artifacts
 **/build/
