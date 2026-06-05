@@ -4,7 +4,7 @@
   <name>turtle_figure8</name>
   <version>0.0.1</version>
   <description>乌龟8字运动 ROS2 包，两圆法控制</description>
-  <maintainer email="user@example.com">user</maintainer>
+  <maintainer email="example@user.com">user</maintainer>
   <license>MIT</license>
 
   <!-- 构建工具 -->
