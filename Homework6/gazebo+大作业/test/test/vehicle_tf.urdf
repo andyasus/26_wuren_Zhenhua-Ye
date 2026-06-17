@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<robot name="vehicle_tf">
+
+  <!-- 定义所有坐标系 -->
+  <link name="world"/>
+  <link name="base_link"/>
+  <link name="camera_link"/>
+  <link name="lidar_link"/>
+  <link name="gps_link"/>
+  <link name="imu_link"/>
+  <link name="magnetometer_link"/>
+  <link name="odometry_link"/>   
+
+  <!-- 起点：(0, -15)，朝北（Yaw = 1.5708） -->
+  <joint name="world_to_base" type="fixed">
+    <parent link="world"/>
+    <child link="base_link"/>
+    <origin xyz="0 -15 0" rpy="0 0 1.5708"/>
+  </joint>
+
+  <!-- 1. 相机（前 0.20m，上 0.10m） -->
+  <joint name="base_to_camera" type="fixed">
+    <parent link="base_link"/>
+    <child link="camera_link"/>
+    <origin xyz="0.20 0 0.10" rpy="0 0 0"/>
+  </joint>
+
+  <!-- 2. 雷达（前 0.30m，上 0.15m）- 探出车头 -->
+  <joint name="base_to_lidar" type="fixed">
+    <parent link="base_link"/>
+    <child link="lidar_link"/>
+    <origin xyz="0.30 0 0.15" rpy="0 0 0"/>
+  </joint>
+
+  <!-- 3. GPS（中心，上 0.05m） -->
+  <joint name="base_to_gps" type="fixed">
+    <parent link="base_link"/>
+    <child link="gps_link"/>
+    <origin xyz="0 0 0.05" rpy="0 0 0"/>
+  </joint>
+
+  <!-- 4. IMU（中心偏前 0.05m，上 0.02m） -->
+  <joint name="base_to_imu" type="fixed">
+    <parent link="base_link"/>
+    <child link="imu_link"/>
+    <origin xyz="0.05 0 0.02" rpy="0 0 0"/>
+  </joint>
+
+  <!-- 5. 磁力计（车顶后方 0.05m，上 0.12m） -->
+  <joint name="base_to_magnetometer" type="fixed">
+    <parent link="base_link"/>
+    <child link="magnetometer_link"/>
+    <origin xyz="-0.05 0 0.12" rpy="0 0 0"/>
+  </joint>
+
+  <!-- 6. 里程计（与 base_link 重合，或稍微偏下） -->
+  <joint name="base_to_odometry" type="fixed">
+    <parent link="base_link"/>
+    <child link="odometry_link"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+</robot>
