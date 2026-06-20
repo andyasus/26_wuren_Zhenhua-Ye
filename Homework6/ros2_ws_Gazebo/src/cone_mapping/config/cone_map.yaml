@@ -1,0 +1,27 @@
+cones:
+  # world 坐标系 (ENU: x=东, y=北)
+  # 蓝色锥桶 (赛道左侧)
+  - {x: -2.0,  y: -15.0, type: blue}
+  - {x: -2.0,  y: -10.0, type: blue}
+  - {x: -2.0,  y: -5.0,  type: blue}
+  - {x: -2.0,  y:  0.0,  type: blue}
+  - {x: -1.31, y:  4.32, type: blue}
+  - {x:  0.68, y:  8.23, type: blue}
+  - {x:  3.77, y: 11.32, type: blue}
+  - {x:  7.68, y: 13.31, type: blue}
+  - {x: 12.0,  y: 14.0,  type: blue}
+  - {x: 17.0,  y: 14.0,  type: blue}
+  - {x: 22.0,  y: 14.0,  type: blue}
+  - {x: 27.0,  y: 14.0,  type: blue}
+  # 黄色锥桶 (赛道右侧)
+  - {x:  2.0,  y: -15.0, type: yellow}
+  - {x:  2.0,  y: -10.0, type: yellow}
+  - {x:  2.0,  y: -5.0,  type: yellow}
+  - {x:  2.0,  y:  0.0,  type: yellow}
+  - {x:  2.76, y:  3.83, type: yellow}
+  - {x:  4.93, y:  7.07, type: yellow}
+  - {x:  8.17, y:  9.24, type: yellow}
+  - {x: 12.0,  y: 10.0,  type: yellow}
+  - {x: 17.0,  y: 10.0,  type: yellow}
+  - {x: 22.0,  y: 10.0,  type: yellow}
+  - {x: 27.0,  y: 10.0,  type: yellow}

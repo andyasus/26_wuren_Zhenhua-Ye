@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<sdf version="1.9">
+  <world name="map">
+
+    <!-- 地面 -->
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>200 200</size>
+            </plane>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>200 200</size>
+            </plane>
+          </geometry>
+          <material>
+            <ambient>0.6 0.6 0.6</ambient>
+            <diffuse>0.6 0.6 0.6</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- 锥桶赛道 -->
+    <include>
+      <uri>model://shixi</uri>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+    <!-- 车辆由 launch 文件通过 ros_gz_sim create 动态 spawn，此处不写死 -->
+  </world>
+</sdf>
