@@ -25,8 +25,8 @@
 |------|---------|------|:--:|
 | 龚鑫哲 | 仿真环境 + 传感器桥接 | `car_sim` | ✅ |
 | 叶镇华 | 传感器融合 (EKF) | `sensor_fusion` | ✅ |
-| 何嘉喜 | 锥桶检测 + 地标匹配建图 | `cone_mapping` | ✅ |
-| 陈政烨 | 路径规划 + Pure Pursuit 控制 | `planning_control` | ✅ |
+| 陈政烨 | 锥桶检测 + 地标匹配建图 | `cone_mapping` | ✅ |
+| 何嘉喜 | 路径规划 + Pure Pursuit 控制 | `planning_control` | ✅ |
 
 > 另有 `sim_perception`（感知仿真，Pyarmor 加密）和 `tracks`（锥桶 3D 模型）两个辅助包。
 
@@ -116,14 +116,14 @@
 - GPS→米制: 局部切平面法，第一帧定为原点 (0, -15)
 - 磁力计→航向: `yaw = π/2 - atan2(my, mx)`（ENU + FLU 坐标系）
 
-### 3. `cone_mapping` — 锥桶检测 + 地标定位（何嘉喜）
+### 3. `cone_mapping` — 锥桶检测 + 地标定位（陈政烨）
 
 **职责**: 从 LiDAR 点云检测锥桶，与预标定地图匹配，修正车辆位姿。
 
 - `cone_detector`: 欧式距离聚类 → 锥桶中心坐标
 - `landmark_localizer`: SVD 刚性变换求解，发布 `/corrected_pose`
 
-### 4. `planning_control` — 路径规划 + 控制（陈政烨）
+### 4. `planning_control` — 路径规划 + 控制（何嘉喜）
 
 **职责**: 生成赛道中线参考路径，用 Pure Pursuit 算法输出控制指令。
 
